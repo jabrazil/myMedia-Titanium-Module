@@ -245,17 +245,22 @@ static NSDictionary* TI_filterableItemProperties;
 	TiApp * tiApp = [TiApp app];
 	if ([TiUtils isIPad]==NO)
 	{
-		[[tiApp controller] manuallyRotateToOrientation:UIInterfaceOrientationPortrait duration:[[tiApp controller] suggestedRotationDuration]];
+	// JAB	[[tiApp controller] manuallyRotateToOrientation:UIInterfaceOrientationPortrait duration:[[tiApp controller] suggestedRotationDuration]];
 	}
 	[tiApp showModalController:picker_ animated:animatedPicker];
 }
+
+
+
+
+
 
 -(void)displayModalPicker:(UIViewController*)picker_ settings:(NSDictionary*)args
 {
 	TiApp * tiApp = [TiApp app];
 	if ([TiUtils isIPad]==NO)
 	{
-		[[tiApp controller] manuallyRotateToOrientation:UIInterfaceOrientationPortrait duration:[[tiApp controller] suggestedRotationDuration]];
+		// JAB [[tiApp controller] manuallyRotateToOrientation:UIInterfaceOrientationPortrait duration:[[tiApp controller] suggestedRotationDuration]];
 		[tiApp showModalController:picker_ animated:animatedPicker];
 	}
 	else
